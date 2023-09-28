@@ -2,7 +2,7 @@ import React from "react";
 
 interface FadeBoxType {
   children: React.ReactNode;
-  delay: string;
+  delay?: string;
 }
 
 const FadeBox: React.FC<FadeBoxType> = ({ children, delay }) => {

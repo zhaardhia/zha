@@ -8,9 +8,9 @@ interface Child {
 
 const Layout: FC<Child> = ({ children }) => {
   return (
-    <div className="w-[70%] max-w-[1000px] mx-auto">
+    <div className="  mx-auto">
       <Navbar />
-      <div className="">
+      <div className="sm:w-[70%] w-[90%] max-w-[1000px] mx-auto">
         {children}
       </div>
       <Footer />

@@ -4,6 +4,8 @@ import Layout from '@/components/Layout'
 import Intro from '@/components/Intro'
 import Stuff from '@/components/Stuff'
 import AboutMeMain from '@/components/AboutMeMain'
+import FadeBox from '@/components/FadeBox'
+import FieldBadges from '@/components/FieldBadges'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -12,11 +14,15 @@ export default function Home() {
       // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <Intro
-        headerTitle="Hi, it’s Firzha."
+        headerTitle="hi, it’s firzha."
         childTitle="crafting digital solutions & making art."
       />
-      <Stuff />
-      <AboutMeMain />
+      <FieldBadges />
+      <FadeBox>
+        <Stuff />
+        <AboutMeMain />
+        <hr className="my-10" />
+      </FadeBox>
     </Layout>
   )
 }

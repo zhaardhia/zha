@@ -98,10 +98,11 @@
 .section-header::after {
   content: "";
   display: block;
-  width: 85%;
+  width: 35%;
   margin-top: 55px;
   height: 1px;
   margin-left: 20px;
+  opacity: 60%;
   background-color: #8892b0;
 }
 
