@@ -75,6 +75,21 @@
   }
 }
 
+/* Animation */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .section-header {
   display: flex;
   padding-bottom: 42px;
@@ -83,7 +98,7 @@
 .section-header::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 85%;
   margin-top: 55px;
   height: 1px;
   margin-left: 20px;
@@ -93,4 +108,75 @@
 
 .section-title {
   font-family: "NTR", sans-serif;
+}
+
+/* project */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+@media (max-width: 1080px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.projects-card {
+  position: relative;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  background-color: #233554;
+  border-radius: 16px;
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  background-color: #233554;
+}
+
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  padding: 1.25em 0 !important;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: none !important;
+}
+.folder-icon {
+  color: #64ffda;
+}
+
+.github-icon:hover {
+  color: #64ffda;
+}
+
+.open-icon {
+  margin-left: 10px;
+}
+
+.card-title {
+  font-family: "NTR", sans-serif;
+  color: #ccd6f6;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-family: "NTR", sans-serif;
+  color: #8892b0;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.card-tech {
+  font-family: "NTR", sans-serif;
+  color: #8892b0;
+  font-size: 16px;
 }
