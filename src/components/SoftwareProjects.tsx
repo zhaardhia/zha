@@ -3,7 +3,8 @@ import FadeBox from './FadeBox'
 import { Icon } from '@iconify/react';
 import ExternalLinks from './ExternalLink';
 import { techStack } from '@/lib/utils';
-
+import { Button } from './ui/button';
+import Link from 'next/link';
 interface Project {
   desc: string;
   techStack: string[];
@@ -122,6 +123,9 @@ const SoftwareProjects = () => {
           </FadeBox>
         ))}
       </ul>
+      <Link href="/software">
+        <Button variant="outline" className="mt-10 rounded-xl hover:bg-slate-50">View All Software Projects <Icon icon="grommet-icons:next" className="ml-1" /></Button>
+      </Link>
     </div>
   )
 }
