@@ -1,10 +1,9 @@
 import React from 'react'
-import FadeBox from './FadeBox'
+import FadeBox from '../FadeBox';
 import { Icon } from '@iconify/react';
-import ExternalLinks from './ExternalLink';
+import ExternalLinks from '../ExternalLink';
 import { techStack } from '@/lib/utils';
-import { Button } from './ui/button';
-import Link from 'next/link';
+
 interface Project {
   desc: string;
   techStack: string[];
@@ -33,7 +32,7 @@ interface TechType {
   sass: string;
 }
 
-const projects: Record<string, Project> = {
+const projectsApp: Record<string, Project> = {
   "last man standing": {
     desc:
       "A Web 3 based game to guess random word against others and win the prize of crypto.",
@@ -62,13 +61,6 @@ const projects: Record<string, Project> = {
     link: "https://github.com/utopeeuh/Fokus",
     open: ""
   },
-  "threap app": {
-    desc:
-      "An online thread apps that could create thread, like/unlike, and comment on every thread.",
-    techStack: ["react", "tailwind", "redux"],
-    link: "https://github.com/zhaardhia/threap-app",
-    open: ""
-  },
   "sultan tangsel BPN": {
     desc:
       "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
@@ -78,11 +70,11 @@ const projects: Record<string, Project> = {
   },
 };
 
-const SoftwareProjects = () => {
+const SoftwareApp = () => {
   return (
     <div className="project-container my-10">
       <ul className="projects-grid">
-        {Object.keys(projects).map((key, i) => (
+        {Object.keys(projectsApp).map((key, i) => (
           <FadeBox delay={`${i + 1}00ms`}>
             <li className="projects-card cursor-pointer">
               <div className="card-header">
@@ -90,15 +82,15 @@ const SoftwareProjects = () => {
                   <Icon icon="ic:outline-folder" className="text-lg" />
                 </div>
                 <ExternalLinks
-                  githubLink={projects[key]["link"]}
-                  openLink={projects[key]["open"]}
+                  githubLink={projectsApp[key]["link"]}
+                  openLink={projectsApp[key]["open"]}
                 ></ExternalLinks>
               </div>
               
               <div className="card-title">{key}</div>
-              <div className="card-desc">{projects[key]["desc"]}</div>
+              <div className="card-desc">{projectsApp[key]["desc"]}</div>
               <div className="flex gap-2">
-                {projects[key]["techStack"].map((stack: string) => {
+                {projectsApp[key]["techStack"].map((stack: string) => {
                   console.log({stack})
                   return (
                     <Icon icon={techStack[stack as keyof TechType]} className="text-2xl shadow-2xl" />
@@ -109,11 +101,8 @@ const SoftwareProjects = () => {
           </FadeBox>
         ))}
       </ul>
-      <Link href="/software">
-        <Button variant="outline" className="mt-10 rounded-xl hover:bg-slate-50">View All Software Projects <Icon icon="grommet-icons:next" className="ml-1" /></Button>
-      </Link>
     </div>
   )
 }
 
-export default SoftwareProjects
+export default SoftwareApp
