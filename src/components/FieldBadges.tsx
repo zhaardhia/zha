@@ -10,43 +10,10 @@ interface FieldBadgeType {
   index?: number;
 }
 
-const fields = [
-  {
-    name: "Software Engineering",
-    icon: "teenyicons:code-solid",
-    color: "text-yellow-600"
-  },
-  {
-    name: "Frontend Developer",
-    icon: "icon-park-solid:web-page",
-    color: "text-blue-600"
-  },
-  {
-    name: "Freelancer",
-    icon: "simple-icons:freelancer",
-    color: "text-green-500"
-  },
-  {
-    name: "Analog Photography",
-    icon: "mdi:film",
-    color: "text-slate-500"
-  },
-  {
-    name: "Street & Portrait Photography",
-    icon: "mdi:photography",
-    color: "text-red-500"
-  },
-  {
-    name: "Music",
-    icon: "mdi:music",
-    color: "text-amber-700"
-  },
-  {
-    name: "Audio Engineer",
-    icon: "game-icons:lightning-frequency",
-    color: "text-orange-500"
-  },
-]
+interface FieldsType {
+  fields: FieldBadgeType[];
+}
+
 
 const FieldBadge: React.FC<FieldBadgeType> = ({ icon, name, color, index }) => {
   console.log({index})
@@ -74,7 +41,7 @@ const FieldBadge: React.FC<FieldBadgeType> = ({ icon, name, color, index }) => {
   )
 }
 
-const FieldBadges = () => {
+const FieldBadges: React.FC<FieldsType> = ({ fields }) => {
   return (
     <div className="flex gap-3 flex-wrap">
       {fields.map((field: FieldBadgeType, index: number) => {

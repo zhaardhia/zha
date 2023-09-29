@@ -36,56 +36,56 @@ interface TechType {
 const projects: Record<string, Project> = {
   "last man standing": {
     desc:
-      "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
+      "A Web 3 based game to guess random word against others and win the prize of crypto.",
     techStack: ["next", "tailwind", "typescript"],
     link: "https://github.com/gazijarin/TDSBHomeworkManagement",
     open: "https://tdsb-app.herokuapp.com/"
   },
   "mertapada profit-spending management": {
     desc:
-      "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
-    link: "https://github.com/gazijarin/adamai",
-    open: "https://gazijarin.github.io/AdamAI/"
+    link: "https://github.com/zhaardhia/mertapada-investor-frontend",
+    // open: "https://gazijarin.github.io/AdamAI/"
   },
   "monda commerce": {
     desc:
-      "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
+      "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans)",
     techStack: ["next", "tailwind", "node", "jwt", "mysql"],
     link:
-      "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+      "https://github.com/zhaardhia/monda-frontend"
   },
   "fokus": {
     desc:
-      "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
+      "A Daily Task Tracker with pomodoro timer & gamification, helping people that have tendencies of ADHD.",
     techStack: ["swift"],
-    link: "https://github.com/gazijarin/OdinBot",
+    link: "https://github.com/utopeeuh/Fokus",
     open: ""
   },
   "threap app": {
     desc:
-      "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
+      "An online thread apps that could create thread, like/unlike, and comment on every thread.",
     techStack: ["react", "tailwind", "redux"],
-    link: "https://github.com/gazijarin/gamecentre",
+    link: "https://github.com/zhaardhia/threap-app",
     open: ""
   },
   "countriez": {
     desc:
-      "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
+      "A mini web-app that gather information of each country in the world.",
     techStack: ["next", "tailwind", "typescript", "graphql"],
     link: "https://github.com/gazijarin/stonehenge",
     open: ""
   },
   "sultan tangsel BPN": {
     desc:
-      "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
+      "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
     link: "https://github.com/gazijarin/OdinBot",
     open: ""
   },
   "covid 19 data": {
     desc:
-      "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
+      "A mini web-app for visualise Covid Statistics data in Indonesia.",
     techStack: ["gatsby", "chakra", "javascript"],
     link: "https://github.com/gazijarin/gamecentre",
     open: ""

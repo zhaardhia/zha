@@ -8,11 +8,11 @@ interface ExternalLinksType {
 const ExternalLinks: React.FC<ExternalLinksType> = ({ githubLink, openLink }) => {
   return (
     <span className="flex items-center">
-      <a className="github-icon" href={githubLink}>
+      <a className="github-icon" href={githubLink} target="_blank">
         <Icon icon="mdi:github" className="text-white text-2xl" />
       </a>
       {openLink && (
-        <a className="open-icon" href={openLink}>
+        <a className="open-icon" href={openLink} target="_blank">
           <Icon icon="ion:open-outline" className="text-white text-2xl" />
         </a>
       )}
