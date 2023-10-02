@@ -72,6 +72,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: #fffffe
   }
 }
 
@@ -132,13 +133,13 @@
   position: relative;
   height: 100%;
   padding: 2rem 1.75rem;
-  background-color: #233554;
+  background-color: #16161a;
   border-radius: 16px;
 }
 
 .projects-card:hover {
   transform: translateY(-7px);
-  background-color: #233554;
+  transition: 1s ease;
 }
 
 .card-header {
@@ -150,7 +151,7 @@
   border-bottom: none !important;
 }
 .folder-icon {
-  color: #64ffda;
+  color: #7f5af0;
 }
 
 .github-icon:hover {

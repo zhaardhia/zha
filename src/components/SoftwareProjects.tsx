@@ -5,6 +5,7 @@ import ExternalLinks from './ExternalLink';
 import { techStack } from '@/lib/utils';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import SwiperImages from './SwiperImages';
 interface Project {
   desc: string;
   techStack: string[];
@@ -81,10 +82,11 @@ const projects: Record<string, Project> = {
 const SoftwareProjects = () => {
   return (
     <div className="project-container my-10">
+      <SwiperImages />
       <ul className="projects-grid">
         {Object.keys(projects).map((key, i) => (
           <FadeBox delay={`${i + 1}00ms`}>
-            <li className="projects-card cursor-pointer">
+            <div className="projects-card cursor-pointer">
               <div className="card-header">
                 <div className="folder-icon">
                   <Icon icon="ic:outline-folder" className="text-lg" />
@@ -105,7 +107,7 @@ const SoftwareProjects = () => {
                   )
                 })}
               </div>
-            </li>
+            </div>
           </FadeBox>
         ))}
       </ul>
