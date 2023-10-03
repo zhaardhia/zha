@@ -138,6 +138,12 @@ export const softwareFields = [
     color: "text-black"
   },
   {
+    id: "swift",
+    name: "Swift",
+    icon: techStack["swift"],
+    color: "text-black"
+  },
+  {
     id: "mysql",
     name: "MySql",
     icon: techStack["mysql"],

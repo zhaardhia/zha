@@ -28,7 +28,37 @@ export const softwareProjectsDetail = [
       formatFile: "png",
       totalImage: 13
     }
-  }
+  },
+  {
+    id: "monda",
+    name: "monda kitchen commerce",
+    description: [
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee.",
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee."
+    ],
+    banner: "/monda/mondaBanner2.png",
+    techStack: ["next", "tailwind", "node", "jwt", "mysql"],
+    showCase: {
+      formatName: "mondaShowcase",
+      formatFile: "png",
+      totalImage: 5
+    }
+  },
+  {
+    id: "fokus",
+    name: "fokus.",
+    description: [
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee.",
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee. A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee."
+    ],
+    banner: "/fokus/fokusBanner2.png",
+    techStack: ["swift"],
+    showCase: {
+      formatName: "fokusShow",
+      formatFile: "png",
+      totalImage: 6
+    }
+  },
 ]
 
 export type SoftwareProjectDetailShowCaseType = {
