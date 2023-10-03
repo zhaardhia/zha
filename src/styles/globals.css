@@ -182,3 +182,28 @@
   color: #8892b0;
   font-size: 16px;
 }
+
+/* experience */
+.job-description li::before {
+  content: "▹    ";
+  color: #7f5af0;
+  position: absolute;
+  left: 0;
+}
+
+.job-description li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 16px;
+}
+
+.job-description {
+  padding-top: 24px;
+  max-width: 650px;
+  font-family: "NTR", sans-serif;
+}
+
+.job-description a,
+.job-description b {
+  font-weight: bold;
+}
