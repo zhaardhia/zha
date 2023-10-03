@@ -14,7 +14,7 @@ const index = () => {
         </div>
         {/* <FieldBadges fields={softwareFields} /> */}
         {/* <SoftwareSections /> */}
-        <div className="flex justify-between items-start gap-5">
+        <div className="flex justify-between sm:flex-row flex-col items-start gap-5">
           <HeaderMe />
           <SocialMediaFormal />
         </div>
