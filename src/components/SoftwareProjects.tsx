@@ -7,6 +7,7 @@ import { Button } from './ui/button';
 import Link from 'next/link';
 import SwiperImages from './SwiperImages';
 interface Project {
+  id: string;
   desc: string;
   techStack: string[];
   link: string;
@@ -36,6 +37,7 @@ interface TechType {
 
 const projects: Record<string, Project> = {
   "last man standing": {
+    id: "lsm",
     desc:
       "A Web 3 based game to guess random word against others and win the prize of crypto.",
     techStack: ["next", "tailwind", "typescript"],
@@ -43,6 +45,7 @@ const projects: Record<string, Project> = {
     open: "https://tdsb-app.herokuapp.com/"
   },
   "mertapada profit-spending management": {
+    id: "mertapada",
     desc:
       "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
@@ -50,6 +53,7 @@ const projects: Record<string, Project> = {
     // open: "https://gazijarin.github.io/AdamAI/"
   },
   "monda commerce": {
+    id: "monda",
     desc:
       "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans)",
     techStack: ["next", "tailwind", "node", "jwt", "mysql"],
@@ -57,6 +61,7 @@ const projects: Record<string, Project> = {
       "https://github.com/zhaardhia/monda-frontend"
   },
   "fokus": {
+    id: "fokus",
     desc:
       "A Daily Task Tracker with pomodoro timer & gamification, helping people that have tendencies of ADHD.",
     techStack: ["swift"],
@@ -64,6 +69,7 @@ const projects: Record<string, Project> = {
     open: ""
   },
   "threap app": {
+    id: "threap",
     desc:
       "An online thread apps that could create thread, like/unlike, and comment on every thread.",
     techStack: ["react", "tailwind", "redux"],
@@ -71,6 +77,7 @@ const projects: Record<string, Project> = {
     open: ""
   },
   "sultan tangsel BPN": {
+    id: "sultantangsel",
     desc:
       "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
@@ -89,7 +96,9 @@ const SoftwareProjects = () => {
             <div className="projects-card cursor-pointer">
               <div className="card-header">
                 <div className="folder-icon">
-                  <Icon icon="ic:outline-folder" className="text-lg" />
+                  <Link href={`/software/${projects[key]["id"]}`} className="">
+                    <Icon icon="ic:outline-folder" className="text-2xl" />
+                  </Link>
                 </div>
                 <ExternalLinks
                   githubLink={projects[key]["link"]}

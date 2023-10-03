@@ -5,7 +5,10 @@ import SocialMedias from '@/components/SocialMedias'
 import Image from 'next/image'
 import { techStack } from '@/lib/utils'
 import SwiperDemoSoftware from '@/components/SwiperDemoSoftware'
-
+import { softwareProjectsDetail, SoftwareProjectDetailType } from '@/lib/data'
+import { useRouter } from 'next/router'
+import { softwareFields } from '@/lib/utils'
+import FadeBox from '@/components/FadeBox'
 const lsmTech = [
   {
     name: "Next JS",
@@ -23,31 +26,90 @@ const lsmTech = [
     color: "text-black"
   },
 ]
-const sourceImage = ["/lsm/lsmShow1.png", "/lsm/lsmShow2.png", "/lsm/lsmShow3.png", "/lsm/lsmShow4.png"]
+
+interface StackProjectType {
+  name: string;
+  icon: string;
+  color: string;
+}
+
+interface TechType {
+  next: string;
+  tailwind: string;
+  react: string;
+  node: string;
+  express: string;
+  javascript: string;
+  typescript: string;
+  redux: string;
+  // easy-peasy,
+  // zustand,
+  jwt: string;
+  mysql: string;
+  postgres: string;
+  swift: string;
+  graphql: string;
+  gatsby: string;
+  chakra: string;
+  sass: string;
+}
 
 const SoftwareDetail = () => {
+  const router = useRouter()
+  console.log(router.query)
+  const findDetailProj = softwareProjectsDetail.find((detailProj: SoftwareProjectDetailType) => {
+    return detailProj.id === router.query.id
+  })
+  console.log({findDetailProj})
+  const imageSource = []
+
+  if (findDetailProj) {
+    for (let index = 1; index <= findDetailProj?.showCase?.totalImage; index++) {
+      imageSource.push(`/${findDetailProj?.id}/${findDetailProj?.showCase?.formatName}${index}.${findDetailProj?.showCase?.formatFile}`)
+    }
+  }
+  
+  let techStacks: StackProjectType[] = []
+
+  if (findDetailProj) {
+    techStacks = findDetailProj.techStack.map((stack: string) => {
+      const findStack = softwareFields.find(field => field.id === stack)
+      return {
+        name: findStack!.name,
+        icon: techStack[stack as keyof TechType],
+        color: findStack!.color
+      }
+    })
+  }
+  console.log({techStacks})
   return (
     <Layout>
-      <div className="min-h-[50vh]">
+      <div className="">
         <div className="h-28">
         </div>
-        <div className="flex justify-between items-center sm:flex-row flex-col">
-          <p className="text-6xl">last man standing</p>
-          <Image src="/lsm/lsmBanner2.png" alt='last man standing banner' width={400} height={200} />
-        </div>
+        <FadeBox>
+          <div className="flex justify-between items-center sm:flex-row flex-col min-h-[70vh]">
+            <p className="text-5xl">{findDetailProj?.name}</p>
+            {findDetailProj?.banner && (
+              <Image src={findDetailProj?.banner} alt='last man standing banner' width={400} height={200} />
+            )}
+          </div>
+        </FadeBox>  
 
-        <FieldBadges fields={lsmTech} />
+        {techStacks && (<FieldBadges fields={techStacks} />)}
       </div>
-      <div className="mt-28 mb-10">
-        <div className="mb-10">
-          <span className="section-title text-3xl mt-9 w-[10%]">Highlights</span>
+      <FadeBox>
+        <div className="mt-28 mb-10">
+          <div className="mb-10">
+            <span className="section-title text-3xl mt-9 w-[10%]">Highlights</span>
+          </div>
+          <div className="flex flex-col gap-4 text-lg">
+            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
+            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-lg">
-          <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
-          <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
-        </div>
-      </div>
-      <SwiperDemoSoftware src={sourceImage}/>
+      </FadeBox>
+      <SwiperDemoSoftware src={imageSource}/>
       <div className="my-10 flex flex-col gap-5">
         <hr  />
         <SocialMedias />
