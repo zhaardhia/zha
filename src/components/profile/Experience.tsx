@@ -45,7 +45,7 @@ const Experience = () => {
         <AccordionTrigger>
           <div className="flex flex-col gap-2 text-start">
             <p className="text-lg">Software Engineer Intern at <span className="text-[#2cb67d]">IKI Karunia Indonesia (Anabatic Digital Raya's Subsidiaries)</span></p>
-            <p className="text-sm text-slate-300">Mar 2023 - Present</p>
+            <p className="text-sm text-slate-300">Feb 2022 - Feb 2023</p>
           </div>
         </AccordionTrigger>
         <AccordionContent>
