@@ -32,7 +32,7 @@ const SwiperDemoSoftware: React.FC<SwiperDemoType> = ({ src }) => {
       {src.map((source) => {
         return (
           <SwiperSlide className="mx-auto">
-            <Image src={source} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" />
+            <Image src={source} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" loading='lazy' />
           </SwiperSlide>
         )
       })}

@@ -27,16 +27,16 @@ export default () => {
 
     >
       <SwiperSlide className="mx-auto">
-        <Image src="/main-software-project/mertapadaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-lg" />
+        <Image src="/main-software-project/mertapadaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src="/main-software-project/lsmBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-3xl" />
+        <Image src="/main-software-project/lsmBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-3xl" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide>
-        <Image src="/main-software-project/fokusBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10" />
+        <Image src="/main-software-project/fokusBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide>
-      < Image src="/main-software-project/mondaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10" />
+      < Image src="/main-software-project/mondaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10" loading='lazy' />
       </SwiperSlide>
     </Swiper>
   );

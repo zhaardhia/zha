@@ -91,7 +91,7 @@ const SoftwareDetail = () => {
           <div className="flex justify-between items-center sm:flex-row flex-col min-h-[70vh]">
             <p className="text-5xl">{findDetailProj?.name}</p>
             {findDetailProj?.banner && (
-              <Image src={findDetailProj?.banner} alt='last man standing banner' width={400} height={200} />
+              <Image src={findDetailProj?.banner} alt='project banner' width={400} height={200} loading='lazy' />
             )}
           </div>
         </FadeBox>  
