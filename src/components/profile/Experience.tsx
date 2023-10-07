@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import FadeBox from '../FadeBox'
 
 const Experience = () => {
   return (
@@ -17,10 +18,17 @@ const Experience = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent>
+
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
-            <li>Developed and maintain a scalable, high-performing, and user-friendly web application for digital payment solution & commerce for growing business using React + Redux, GraphQL, Node, and Redis</li>
-            <li>Engage in daily communication and cooperation with cross-functional teams comprising engineers and business development professionals</li>
-            <li>Implemented a microservices architecture that improved system modularity and reduced dependencies between components</li>
+            <FadeBox delay={`${0 + 1}00ms`}>
+              <li>Developed and maintain a scalable, high-performing, and user-friendly web application for digital payment solution & commerce for growing business using React + Redux, GraphQL, Node, and Redis</li>
+            </FadeBox>
+            <FadeBox delay={`${1 + 1}00ms`}>
+              <li>Engage in daily communication and cooperation with cross-functional teams comprising engineers and business development professionals</li>
+            </FadeBox>
+            <FadeBox delay={`${2 + 1}00ms`}>
+              <li>Implemented a microservices architecture that improved system modularity and reduced dependencies between components</li>
+            </FadeBox>
           </ol>
         </AccordionContent>
       </AccordionItem>
@@ -33,11 +41,21 @@ const Experience = () => {
         </AccordionTrigger>
         <AccordionContent>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
-            <li>Successfully created & improved feature for admin-side</li>
-            <li>Successfully migrated admin menu from PHP to Next.js</li>
-            <li>Successfully migrated use case to React Ecosystem</li>
-            <li>Collaborated with internal Front-end team, Back-end & Designer team, and Product team</li>
-            <li>Compose reusable front page components</li>
+            <FadeBox delay={`${0 + 1}00ms`}>
+              <li>Successfully created & improved feature for admin-side</li>
+            </FadeBox>
+            <FadeBox delay={`${1 + 1}00ms`}>
+              <li>Successfully migrated admin menu from PHP to Next.js</li>
+            </FadeBox>
+            <FadeBox delay={`${2 + 1}00ms`}>
+              <li>Successfully migrated use case to React Ecosystem</li>
+            </FadeBox>
+            <FadeBox delay={`${3 + 1}00ms`}>
+              <li>Collaborated with internal Front-end team, Back-end & Designer team, and Product team</li>
+            </FadeBox>
+            <FadeBox delay={`${4 + 1}00ms`}>
+              <li>Compose reusable front page components</li>
+            </FadeBox>
           </ol>
         </AccordionContent>
       </AccordionItem>
@@ -50,10 +68,18 @@ const Experience = () => {
         </AccordionTrigger>
         <AccordionContent>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
-            <li>Collaborate closely in the squad to deliver featur</li>
-            <li>Develop back-end services for P2P Lending Platform using Express JS</li>
-            <li>Successfully migrated Java code base for back-end services to JavaScript (Express JS)</li>
-            <li>Successfully renew the front page with the fresh UI/UX and better performance using React & Tailwind CSS on IKI Modal Web Platform</li>
+            <FadeBox delay={`${0 + 1}00ms`}>
+              <li>Collaborate closely in the squad to deliver featur</li>
+            </FadeBox>
+            <FadeBox delay={`${1 + 1}00ms`}>
+              <li>Develop back-end services for P2P Lending Platform using Express JS</li>
+            </FadeBox>
+            <FadeBox delay={`${2 + 1}00ms`}>
+              <li>Successfully migrated Java code base for back-end services to JavaScript (Express JS)</li>
+            </FadeBox>
+            <FadeBox delay={`${3 + 1}00ms`}>
+              <li>Successfully renew the front page with the fresh UI/UX and better performance using React & Tailwind CSS on IKI Modal Web Platform</li>
+            </FadeBox>
           </ol>
         </AccordionContent>
       </AccordionItem>

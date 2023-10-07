@@ -10,7 +10,7 @@ interface Project {
   id: string;
   desc: string;
   techStack: string[];
-  link: string;
+  link?: string;
   open?: string; // Make 'open' property optional if some projects don't have it
 }
 
@@ -39,10 +39,10 @@ const projects: Record<string, Project> = {
   "last man standing": {
     id: "lsm",
     desc:
-      "A Web 3 based game to guess random word against others and win the prize of crypto.",
+      "A Web 3 based game to guess random word against others and win the prize of Eth. (still on develop)",
     techStack: ["next", "tailwind", "typescript"],
-    link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-    open: "https://tdsb-app.herokuapp.com/"
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
   },
   "mertapada profit-spending management": {
     id: "mertapada",
@@ -50,15 +50,16 @@ const projects: Record<string, Project> = {
       "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
     link: "https://github.com/zhaardhia/mertapada-investor-frontend",
-    // open: "https://gazijarin.github.io/AdamAI/"
+    open: "https://gazijarin.github.io/AdamAI/"
   },
   "monda commerce": {
     id: "monda",
     desc:
-      "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans)",
+      "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans).",
     techStack: ["next", "tailwind", "node", "jwt", "mysql"],
     link:
-      "https://github.com/zhaardhia/monda-frontend"
+      "https://github.com/zhaardhia/monda-frontend",
+    open: "https://mondakitchen.com"
   },
   "fokus": {
     id: "fokus",
@@ -81,8 +82,8 @@ const projects: Record<string, Project> = {
     desc:
       "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
-    link: "https://github.com/gazijarin/OdinBot",
-    open: ""
+    // link: "https://github.com/gazijarin/OdinBot",
+    // open: ""
   },
 };
 

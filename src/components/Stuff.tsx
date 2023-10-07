@@ -17,8 +17,12 @@ const Stuff = () => {
         <TabsContent value="account">
           <SoftwareProjects />
         </TabsContent>
-        <TabsContent value="password">Change your password here.</TabsContent>
-        <TabsContent value="music">Change your password here.</TabsContent>
+        <TabsContent value="password">
+          <p className="text-xl text-center mt-5">Photography preview is under developed. Stay tune😉</p>
+        </TabsContent>
+        <TabsContent value="music">
+          <p className="text-xl text-center mt-5">Still writing music with my bandmates.... Stay tune😉</p>
+        </TabsContent>
       </Tabs>
     </div>
   )
