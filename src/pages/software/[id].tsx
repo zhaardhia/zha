@@ -104,11 +104,22 @@ const SoftwareDetail = () => {
             <span className="section-title text-3xl mt-9 w-[10%]">Highlights</span>
           </div>
           <div className="flex flex-col gap-4 text-lg">
-            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
-            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
+            {findDetailProj?.description?.map((description: string) => {
+              return <p>{description}</p>
+            })}
+            {/* <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
+            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p> */}
           </div>
         </div>
       </FadeBox>
+      {findDetailProj?.references && (
+        <div className="flex gap-2 italic text-slate-600">
+          References: {findDetailProj?.references?.map((reference: { name: string, link: string }, idx: number) => {
+            return <a target='_blank' href={reference.link} className="references">{reference.name}{findDetailProj?.references?.length === idx + 1 ? "" : ","}</a>
+          })}
+        </div>
+      )}
+
       <SwiperDemoSoftware src={imageSource}/>
       <div className="my-10 flex flex-col gap-5">
         <hr  />

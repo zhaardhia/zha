@@ -11,9 +11,9 @@ const Navbar = () => {
           <Link href="/" className={cn(
             "hover:border-[1px] hover:bg-slate-50 border-slate-300 p-1 rounded-xl w-[30px] h-[30px] flex justify-center"
           )}><Icon icon="ion:home-outline" /></Link>
-          <Link href="/" className={cn(
+          {/* <Link href="/" className={cn(
             "hover:border-[1px] hover:bg-slate-50 border-slate-300 p-1 rounded-xl w-[30px] h-[30px] flex justify-center"
-          )}><Icon icon="mdi:creation-outline" /></Link>
+          )}><Icon icon="mdi:creation-outline" /></Link> */}
           <Link href="/profile" className={cn(
             "hover:border-[1px] hover:bg-slate-50 border-slate-300 p-1 rounded-xl w-[30px] h-[30px] flex justify-center"
           )}><Icon icon="iconamoon:profile" /></Link>

@@ -49,8 +49,8 @@ const projects: Record<string, Project> = {
     desc:
       "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
-    link: "https://github.com/zhaardhia/mertapada-investor-frontend",
-    open: "https://gazijarin.github.io/AdamAI/"
+    link: "https://github.com/zhaardhia/mertapada-admin-frontend",
+    open: "https://pengelola.localdiskzha.com"
   },
   "monda commerce": {
     id: "monda",
@@ -67,7 +67,7 @@ const projects: Record<string, Project> = {
       "A Daily Task Tracker with pomodoro timer & gamification, helping people that have tendencies of ADHD.",
     techStack: ["swift"],
     link: "https://github.com/utopeeuh/Fokus",
-    open: ""
+    open: "https://apps.apple.com/id/app/fokus/id1663702869"
   },
   "threap app": {
     id: "threap",
@@ -83,7 +83,7 @@ const projects: Record<string, Project> = {
       "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
     // link: "https://github.com/gazijarin/OdinBot",
-    // open: ""
+    open: "https://sultantangsel.id/"
   },
 };
 
@@ -113,7 +113,7 @@ const SoftwareProjects = () => {
                 {projects[key]["techStack"].map((stack: string) => {
                   console.log({stack})
                   return (
-                    <Icon icon={techStack[stack as keyof TechType]} className="text-2xl shadow-2xl" />
+                    <Icon icon={techStack[stack as keyof TechType]} className="text-2xl shadow-2xl text-white" />
                   )
                 })}
               </div>

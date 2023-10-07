@@ -20,7 +20,7 @@ export const softwareProjectsDetail = [
     id: "mertapada",
     name: "warteg mertapada profit-spending management",
     description: [
-      "Warteg Mertapada Bahari is a franchise warteg from Warteg Kharisma Bahari. This website aims to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee.",
+      "Warteg Mertapada Bahari is a franchise warteg from Warteg Kharisma Bahari (WKB). This website aims to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee.",
       "There are 2 side of this website, one is for the investor that have full access of feature, and the other is for admin that organize the warteg directly.",
       "The flow is that the admin must input shopping goods with their price every single day as raw materials for making food at the warteg, then admin must input the profit of that day, also checklist the employees absence, then the program will calculate report of the day, and add the daily profit to monthly profit. As the day goes on, the program will calculate a monthly report which can be seen in its own menu (from the 1st to today's date), which consists of expense per shopping goods category, total expense, total profit, total salary for each employee according to the absences filled in. every day, and also the total profit sharing between investors and admin",
     ],
@@ -30,7 +30,13 @@ export const softwareProjectsDetail = [
       formatName: "mertapadaShow",
       formatFile: "png",
       totalImage: 13
-    }
+    },
+    references: [
+      {
+        name: "Warteg Kharisma Bahari",
+        link: "https://wartegkharismabaharigroup.com/"
+      }
+    ]
   },
   {
     id: "monda",
@@ -46,7 +52,17 @@ export const softwareProjectsDetail = [
       formatName: "mondaShowcase",
       formatFile: "png",
       totalImage: 5
-    }
+    },
+    references: [
+      {
+        name: "Payment Gateway",
+        link: "https://www.xendit.co/en-id/blog/what-is-payment-gateway/"
+      },
+      {
+        name: "Midtrans",
+        link: "https://midtrans.com/"
+      }
+    ]
   },
   {
     id: "fokus",
@@ -61,7 +77,35 @@ export const softwareProjectsDetail = [
       formatName: "fokusShow",
       formatFile: "png",
       totalImage: 6
-    }
+    },
+    references: [
+      {
+        name: "Pomodoro Technique",
+        link: "https://www.themuse.com/advice/take-it-from-someone-who-hates-productivity-hacksthe-pomodoro-technique-actually-works"
+      },
+      {
+        name: "White Noise",
+        link: "https://www.sleepfoundation.org/noise-and-sleep/white-noise"
+      },
+      {
+        name: "Gamification",
+        link: "https://www.biworldwide.com/gamification/what-is-gamification/#:~:text=Gamification%20is%20adding%20game%20mechanics,inspire%20collaborate%2C%20share%20and%20interact."
+      }
+    ]
+  },
+  {
+    id: "sultantangsel",
+    name: "Sultan Tangsel",
+    description: [
+      "Sultan Tangsel is a registration service by BPN Tangerang Selatan so the South Tangerang's residents can queue for their land management. I continued BPN last website's design and adding a registration service, along with admin site to manage and control the registrant",
+    ],
+    banner: "/fokus/fokusBanner2.png",
+    techStack: ["react", "tailwind", "node", "jwt", "mysql"],
+    showCase: {
+      formatName: "fokusShow",
+      formatFile: "png",
+      totalImage: 6
+    },
   },
 ]
 
@@ -76,5 +120,11 @@ export interface SoftwareProjectDetailType {
   description: string[];
   banner: string;
   techStack: string[];
-  showCase: SoftwareProjectDetailShowCaseType
+  showCase: SoftwareProjectDetailShowCaseType,
+  references?: ReferencesProjectsType[] | undefined
+}
+
+export interface ReferencesProjectsType {
+  name: string;
+  link: string
 }

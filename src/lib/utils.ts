@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const techStack = {
-  next: "devicon:nextjs-wordmark",
+  next: "nonicons:next-16",
   tailwind: "vscode-icons:file-type-tailwind",
   react: "logos:react",
   node: "vscode-icons:file-type-node",
@@ -16,7 +16,8 @@ export const techStack = {
   redux: "devicon:redux",
   // easy-peasy,
   // zustand,
-  jwt: "logos:jwt",
+  // shadcn
+  jwt: "logos:jwt-icon",
   mysql: "devicon:mysql",
   postgres: "logos:postgresql",
   swift: "vscode-icons:file-type-swift",
@@ -87,7 +88,7 @@ export const softwareFields = [
     id: "next",
     name: "Next JS",
     icon: techStack["next"],
-    color: "text-black"
+    color: "text-white"
   },
   {
     id: "react",

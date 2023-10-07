@@ -13,12 +13,12 @@ const Experience = () => {
       <AccordionItem value="item-1">
         <AccordionTrigger>
           <div className="flex flex-col gap-2 text-start">
-            <p className="text-lg">Software Engineer at <span className="text-[#2cb67d]">Mayar</span></p>
+            <p className="text-lg no-underline">Software Engineer at <span className="text-[#2cb67d]">Mayar</span></p>
             <p className="text-sm text-slate-300">Mar 2023 - Present</p>
           </div>
         </AccordionTrigger>
         <AccordionContent>
-
+          <a href='https://mayar.id' target='_blank' className="underline text-slate-600">Mayar.id</a>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
             <FadeBox delay={`${0 + 1}00ms`}>
               <li>Developed and maintain a scalable, high-performing, and user-friendly web application for digital payment solution & commerce for growing business using React + Redux, GraphQL, Node, and Redis</li>
@@ -40,6 +40,7 @@ const Experience = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent>
+          <a href='https://campaign.com' target='_blank' className="underline text-slate-600">Campaign.com</a>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
             <FadeBox delay={`${0 + 1}00ms`}>
               <li>Successfully created & improved feature for admin-side</li>
@@ -67,6 +68,7 @@ const Experience = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent>
+          <a href='https://v2.ikimodal.app' target='_blank' className="underline text-slate-600">IKI Modal</a>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
             <FadeBox delay={`${0 + 1}00ms`}>
               <li>Collaborate closely in the squad to deliver featur</li>
