@@ -17,6 +17,7 @@ const Navbar = () => {
           <Link href="/profile" className={cn(
             "hover:border-[1px] hover:bg-slate-50 border-slate-300 p-1 rounded-xl w-[30px] h-[30px] flex justify-center"
           )}><Icon icon="iconamoon:profile" /></Link>
+          <a href='https://www.linkedin.com/in/firzharamadhan/' target='_blank'><Icon icon="mdi:linkedin" className="hover:text-blue-600 cursor-pointer hover:border-[1px] hover:bg-slate-50 border-slate-300 p-1 rounded-xl w-[30px] h-[30px] flex justify-center"  /></a>
         </div>
       </div>
     </nav>
