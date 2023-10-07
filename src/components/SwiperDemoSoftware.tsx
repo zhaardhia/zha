@@ -1,5 +1,5 @@
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -11,7 +11,11 @@ import 'swiper/css/autoplay'
 import Image from 'next/image';
 
 type SwiperDemoType = {
-  src: string[]
+  src: SrcType[],
+}
+type SrcType = {
+  src: string,
+  detail: string
 }
 const SwiperDemoSoftware: React.FC<SwiperDemoType> = ({ src }) => {
   return (
@@ -31,9 +35,11 @@ const SwiperDemoSoftware: React.FC<SwiperDemoType> = ({ src }) => {
     >
       {src.map((source) => {
         return (
+          <Link href={source.detail} className="cursor-pointer">
           <SwiperSlide className="mx-auto">
-            <Image src={source} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" loading='lazy' />
+            <Image src={source.src} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" loading='lazy' />
           </SwiperSlide>
+          </Link>
         )
       })}
     </Swiper>

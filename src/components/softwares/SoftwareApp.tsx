@@ -38,7 +38,7 @@ const projectsApp: Record<string, Project> = {
   "last man standing": {
     id: "lsm",
     desc:
-      "A Web 3 based game to guess random word against others and win the prize of crypto.",
+      "A Web 3 based game to guess random word against others and win the prize of Eth.",
     techStack: ["next", "tailwind", "typescript"],
     // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
     // open: "https://tdsb-app.herokuapp.com/"
@@ -46,7 +46,7 @@ const projectsApp: Record<string, Project> = {
   "mertapada profit-spending management": {
     id: "mertapada",
     desc:
-      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
+      "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee.",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
     link: "https://github.com/zhaardhia/mertapada-admin-frontend",
     open: "https://pengelola.localdiskzha.com"
@@ -54,7 +54,7 @@ const projectsApp: Record<string, Project> = {
   "monda commerce": {
     id: "monda",
     desc:
-      "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans)",
+      "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans).",
     techStack: ["next", "tailwind", "node", "jwt", "mysql"],
     link:
       "https://github.com/zhaardhia/monda-frontend",
@@ -86,7 +86,7 @@ const SoftwareApp = () => {
           <FadeBox delay={`${i + 1}00ms`}>
             <li className="projects-card cursor-pointer">
               <div className="card-header">
-                <div className="folder-icon">
+                <div className="text-[#7f5af0] hover:text-[#9375eb]">
                   <Link href={`/software/${projectsApp[key]["id"]}`} className="">
                     <Icon icon="ic:outline-folder" className="text-2xl" />
                   </Link>

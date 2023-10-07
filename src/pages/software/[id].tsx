@@ -66,7 +66,11 @@ const SoftwareDetail = () => {
 
   if (findDetailProj) {
     for (let index = 1; index <= findDetailProj?.showCase?.totalImage; index++) {
-      imageSource.push(`/${findDetailProj?.id}/${findDetailProj?.showCase?.formatName}${index}.${findDetailProj?.showCase?.formatFile}`)
+      // imageSource.push(`/${findDetailProj?.id}/${findDetailProj?.showCase?.formatName}${index}.${findDetailProj?.showCase?.formatFile}`)
+      imageSource.push({
+        src: `/${findDetailProj?.id}/${findDetailProj?.showCase?.formatName}${index}.${findDetailProj?.showCase?.formatFile}`,
+        detail: `/software/${findDetailProj?.id}`
+      })
     }
   }
   

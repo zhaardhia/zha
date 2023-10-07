@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import FadeBox from '../FadeBox'
+import Link from 'next/link'
 
 const Experience = () => {
   return (
@@ -80,7 +81,7 @@ const Experience = () => {
               <li>Successfully migrated Java code base for back-end services to JavaScript (Express JS)</li>
             </FadeBox>
             <FadeBox delay={`${3 + 1}00ms`}>
-              <li>Successfully renew the front page with the fresh UI/UX and better performance using React & Tailwind CSS on IKI Modal Web Platform</li>
+              <li>Successfully renew the front page with the fresh UI/UX and better performance using React & Tailwind CSS on <a target='_blank' href="https://v2.ikimodal.app">IKI Modal Web Platform</a></li>
             </FadeBox>
           </ol>
         </AccordionContent>
