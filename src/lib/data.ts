@@ -46,7 +46,7 @@ export const softwareProjectsDetail = [
       notes: "Project is in staging environment, and will move the domain soon.",
       link: [
         {
-          url: "https://localdiskzha.com",
+          url: "https://admin.localdiskzha.com",
           note: "Investor Side"
         },
         {

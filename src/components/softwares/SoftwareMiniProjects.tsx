@@ -44,14 +44,14 @@ const projectsApp: Record<string, Project> = {
     desc:
       "A mini web-app that gather information of each country in the world.",
     techStack: ["next", "tailwind", "typescript", "graphql"],
-    link: "https://github.com/gazijarin/stonehenge",
+    link: "https://github.com/zhaardhia/countriez",
     open: ""
   },
   "covid 19 data": {
     desc:
       "A mini web-app for visualise Covid Statistics data in Indonesia.",
     techStack: ["gatsby", "chakra", "javascript"],
-    link: "https://github.com/gazijarin/gamecentre",
+    link: "https://github.com/zhaardhia/Covid19-Data-v2",
     open: ""
   },
 };
