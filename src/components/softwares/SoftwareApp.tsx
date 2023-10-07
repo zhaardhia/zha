@@ -103,7 +103,7 @@ const SoftwareApp = () => {
                 {projectsApp[key]["techStack"].map((stack: string) => {
                   console.log({stack})
                   return (
-                    <Icon icon={techStack[stack as keyof TechType]} className="text-2xl shadow-2xl" />
+                    <Icon icon={techStack[stack as keyof TechType]} className="text-2xl shadow-2xl text-white" />
                   )
                 })}
               </div>

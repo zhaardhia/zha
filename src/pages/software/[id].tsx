@@ -8,6 +8,7 @@ import SwiperDemoSoftware from '@/components/SwiperDemoSoftware'
 import { softwareProjectsDetail, SoftwareProjectDetailType } from '@/lib/data'
 import { useRouter } from 'next/router'
 import { softwareFields } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 import FadeBox from '@/components/FadeBox'
 const lsmTech = [
   {
@@ -56,7 +57,7 @@ interface TechType {
 
 const SoftwareDetail = () => {
   const router = useRouter()
-  console.log(router.query)
+
   const findDetailProj = softwareProjectsDetail.find((detailProj: SoftwareProjectDetailType) => {
     return detailProj.id === router.query.id
   })
@@ -121,6 +122,22 @@ const SoftwareDetail = () => {
       )}
 
       <SwiperDemoSoftware src={imageSource}/>
+      <div className="text-sm font-extralight text-slate-600 flex flex-col gap-3">
+        {findDetailProj?.flagEnvironment?.environment !== "production" && (
+          <p>This is <strong>{findDetailProj?.flagEnvironment?.environment}</strong> environment. {findDetailProj?.flagEnvironment?.notes && findDetailProj?.flagEnvironment?.notes}</p>
+        )}
+
+        {findDetailProj?.flagEnvironment?.link && (
+          <div className="flex gap-3">
+            {findDetailProj?.flagEnvironment?.link?.map((linky: { url?: string, note?: string}) => {
+              console.log({linky})
+              return (
+                <Button variant="outline"><a target='_blank' href={linky?.url}>{linky?.note}</a></Button>
+              )
+            })}
+          </div>
+        )}
+      </div>
       <div className="my-10 flex flex-col gap-5">
         <hr  />
         <SocialMedias />

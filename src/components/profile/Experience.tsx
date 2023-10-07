@@ -71,7 +71,7 @@ const Experience = () => {
           <a href='https://v2.ikimodal.app' target='_blank' className="underline text-slate-600">IKI Modal</a>
           <ol className="flex flex-col gap-3 text-lg job-description text-slate-600">
             <FadeBox delay={`${0 + 1}00ms`}>
-              <li>Collaborate closely in the squad to deliver featur</li>
+              <li>Collaborate closely in the squad to deliver feature</li>
             </FadeBox>
             <FadeBox delay={`${1 + 1}00ms`}>
               <li>Develop back-end services for P2P Lending Platform using Express JS</li>

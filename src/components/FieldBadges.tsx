@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from '@iconify/react';
 import { cn } from '@/lib/utils';
 import FadeBox from './FadeBox';
-
+import { useRouter } from 'next/router';
 interface FieldBadgeType {
   name: string;
   icon: string;
@@ -17,12 +17,15 @@ interface FieldsType {
 
 const FieldBadge: React.FC<FieldBadgeType> = ({ icon, name, color, index }) => {
   console.log({index})
+  const router = useRouter()
+  const isThisAllProject = router?.pathname === "/software"
+  console.log(router.pathname)
   if (index) return (
     <FadeBox delay={`${index + 1}00ms`}>
       <div className="flex gap-1 items-center px-5 py-3 rounded-full border-[1px] border-slate-300">
         <Icon icon={icon} className={cn(
           "text-lg",
-          color
+          isThisAllProject ? "text-black" : color
         )} />
         <p>{name}</p>
       </div>

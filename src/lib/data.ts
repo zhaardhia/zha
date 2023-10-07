@@ -14,6 +14,10 @@ export const softwareProjectsDetail = [
       formatName: "lsmShow",
       formatFile: "png",
       totalImage: 4
+    },
+    flagEnvironment: {
+      environment: "development",
+      notes: "Project is nearly done and will be hosted soon."
     }
   },
   {
@@ -36,7 +40,21 @@ export const softwareProjectsDetail = [
         name: "Warteg Kharisma Bahari",
         link: "https://wartegkharismabaharigroup.com/"
       }
-    ]
+    ],
+    flagEnvironment: {
+      environment: "staging",
+      notes: "Project is in staging environment, and will move the domain soon.",
+      link: [
+        {
+          url: "https://localdiskzha.com",
+          note: "Investor Side"
+        },
+        {
+          url: "https://pengelola.localdiskzha.com",
+          note: "Pengelola / Admin Side"
+        }
+      ],
+    }
   },
   {
     id: "monda",
@@ -62,7 +80,17 @@ export const softwareProjectsDetail = [
         name: "Midtrans",
         link: "https://midtrans.com/"
       }
-    ]
+    ],
+    flagEnvironment: {
+      environment: "staging",
+      notes: "Project is in staging environment, sometimes the API is not working and will be troubleshooted later. Since it in staging mode, all of the payment is need to use virtual payment by Midtrans.",
+      link: [
+        {
+          url: "https://mondakitchen.com",
+          note: "Visit Here."
+        }
+      ]
+    }
   },
   {
     id: "fokus",
@@ -91,7 +119,16 @@ export const softwareProjectsDetail = [
         name: "Gamification",
         link: "https://www.biworldwide.com/gamification/what-is-gamification/#:~:text=Gamification%20is%20adding%20game%20mechanics,inspire%20collaborate%2C%20share%20and%20interact."
       }
-    ]
+    ],
+    flagEnvironment: {
+      environment: "production",
+      link: [
+        {
+          url: "https://apps.apple.com/id/app/fokus/id1663702869",
+          note: "Download Here."
+        }
+      ]
+    }
   },
   {
     id: "sultantangsel",
@@ -106,6 +143,15 @@ export const softwareProjectsDetail = [
       formatFile: "png",
       totalImage: 6
     },
+    flagEnvironment: {
+      environment: "production",
+      link: [
+        {
+          url: "https://sultantangsel.id",
+          note: "Visit Here."
+        }
+      ]
+    }
   },
 ]
 
@@ -121,10 +167,22 @@ export interface SoftwareProjectDetailType {
   banner: string;
   techStack: string[];
   showCase: SoftwareProjectDetailShowCaseType,
-  references?: ReferencesProjectsType[] | undefined
+  references?: ReferencesProjectsType[] | undefined,
+  flagEnvironment: FlagEnvironmentType
 }
 
 export interface ReferencesProjectsType {
   name: string;
   link: string
+}
+
+export interface FlagEnvironmentType {
+  environment: string;
+  notes?: string;
+  link?: FlagEnvironmentLinkType[]
+}
+
+export interface FlagEnvironmentLinkType {
+  url?: string;
+  note?: string;
 }
