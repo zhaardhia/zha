@@ -99,10 +99,10 @@ export const softwareProjectsDetail = [
     description: [
       "Sultan Tangsel is a registration service by BPN Tangerang Selatan so the South Tangerang's residents can queue for their land management. I continued BPN last website's design and adding a registration service, along with admin site to manage and control the registrant",
     ],
-    banner: "/fokus/fokusBanner2.png",
+    banner: "/sultantangsel/bannerSultangsel.png",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
     showCase: {
-      formatName: "fokusShow",
+      formatName: "sultangsel",
       formatFile: "png",
       totalImage: 6
     },

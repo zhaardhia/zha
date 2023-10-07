@@ -9,7 +9,7 @@ interface Project {
   id: string;
   desc: string;
   techStack: string[];
-  link: string;
+  link?: string;
   open?: string; // Make 'open' property optional if some projects don't have it
 }
 
@@ -40,16 +40,16 @@ const projectsApp: Record<string, Project> = {
     desc:
       "A Web 3 based game to guess random word against others and win the prize of crypto.",
     techStack: ["next", "tailwind", "typescript"],
-    link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-    open: "https://tdsb-app.herokuapp.com/"
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
   },
   "mertapada profit-spending management": {
     id: "mertapada",
     desc:
       "A Web-app to recap daily & additional spending, calculate expense & profit, also manage the warteg's employee",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
-    link: "https://github.com/zhaardhia/mertapada-investor-frontend",
-    // open: "https://gazijarin.github.io/AdamAI/"
+    link: "https://github.com/zhaardhia/mertapada-admin-frontend",
+    open: "https://pengelola.localdiskzha.com"
   },
   "monda commerce": {
     id: "monda",
@@ -57,7 +57,8 @@ const projectsApp: Record<string, Project> = {
       "An E-commerce Web Application for UMKM named Monda Kitchen, integrate with Payment Gateway (Midtrans)",
     techStack: ["next", "tailwind", "node", "jwt", "mysql"],
     link:
-      "https://github.com/zhaardhia/monda-frontend"
+      "https://github.com/zhaardhia/monda-frontend",
+    open: "https://mondakitchen.com"
   },
   "fokus": {
     id: "fokus",
@@ -65,15 +66,15 @@ const projectsApp: Record<string, Project> = {
       "A Daily Task Tracker with pomodoro timer & gamification, helping people that have tendencies of ADHD.",
     techStack: ["swift"],
     link: "https://github.com/utopeeuh/Fokus",
-    open: ""
+    open: "https://apps.apple.com/id/app/fokus/id1663702869"
   },
   "sultan tangsel BPN": {
     id: "sultantangsel",
     desc:
       "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
     techStack: ["react", "tailwind", "node", "jwt", "mysql"],
-    link: "https://github.com/gazijarin/OdinBot",
-    open: ""
+    // link: "https://github.com/gazijarin/OdinBot",
+    open: "https://sultantangsel.id"
   },
 };
 

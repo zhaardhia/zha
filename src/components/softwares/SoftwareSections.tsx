@@ -6,7 +6,7 @@ const SoftwareSections = () => {
   return (
     <div className="py-20">
       <div className="section-header">
-        <span className="section-title text-3xl mt-9 w-[10%]">Projects</span>
+        <span className="section-title text-3xl mt-9 sm:w-[10%] w-[40%]">Projects</span>
       </div>
       <div className="flex flex-col gap-10">
         <div>

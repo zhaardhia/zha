@@ -88,7 +88,7 @@ const SoftwareDetail = () => {
         <div className="h-28">
         </div>
         <FadeBox>
-          <div className="flex justify-between items-center sm:flex-row flex-col min-h-[70vh]">
+          <div className="sm:mt-0 mt-5 sm:gap-0 gap-2 flex sm:justify-between justify-around items-center sm:flex-row flex-col min-h-[70vh]">
             <p className="text-5xl">{findDetailProj?.name}</p>
             {findDetailProj?.banner && (
               <Image src={findDetailProj?.banner} alt='project banner' width={400} height={200} loading='lazy' />

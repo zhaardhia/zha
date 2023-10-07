@@ -8,7 +8,7 @@ const AboutMeMain = () => {
   return (
     <FadeBox>
       <div className="section-header">
-        <span className="section-title text-3xl mt-9 w-[15%]">About Me</span>
+        <span className="section-title text-3xl mt-9 sm:w-[15%] w-[45%]">About Me</span>
       </div>
       <div className="flex flex-col gap-5">
         <p className="text-md">I am currently working at <a href="https://mayar.id" target='_blank' className="font-bold">Mayar</a> as a Software Engineer, actively building commerce's & digital payment solution's web application, feature & services for growing business. </p>
