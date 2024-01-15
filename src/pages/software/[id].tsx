@@ -112,8 +112,6 @@ const SoftwareDetail = () => {
             {findDetailProj?.description?.map((description: string) => {
               return <p>{description}</p>
             })}
-            {/* <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p>
-            <p>A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto. A Web 3 based game to guess random word against others and win the prize of crypto.</p> */}
           </div>
         </div>
       </FadeBox>

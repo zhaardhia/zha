@@ -16,8 +16,13 @@ export const softwareProjectsDetail = [
       totalImage: 4
     },
     flagEnvironment: {
-      environment: "development",
-      notes: "Project is nearly done and will be hosted soon."
+      environment: "production",
+      link: [
+        {
+          url: "https://agor.lastman.xyz/",
+          note: "Visit Here."
+        }
+      ]
     }
   },
   {
