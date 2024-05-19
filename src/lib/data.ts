@@ -15,15 +15,15 @@ export const softwareProjectsDetail = [
       formatFile: "png",
       totalImage: 4
     },
-    flagEnvironment: {
-      environment: "production",
-      link: [
-        {
-          url: "https://agor.lastman.xyz/",
-          note: "Visit Here."
-        }
-      ]
-    }
+    // flagEnvironment: {
+    //   environment: "production",
+    //   link: [
+    //     {
+    //       url: "https://agor.lastman.xyz/",
+    //       note: "Visit Here."
+    //     }
+    //   ]
+    // }
   },
   {
     id: "mertapada",
@@ -46,20 +46,20 @@ export const softwareProjectsDetail = [
         link: "https://wartegkharismabaharigroup.com/"
       }
     ],
-    flagEnvironment: {
-      environment: "staging",
-      notes: "Project is in staging environment, and will move the domain soon.",
-      link: [
-        {
-          url: "https://admin.localdiskzha.com",
-          note: "Investor Side"
-        },
-        {
-          url: "https://pengelola.localdiskzha.com",
-          note: "Pengelola / Admin Side"
-        }
-      ],
-    }
+    // flagEnvironment: {
+    //   environment: "staging",
+    //   notes: "Project is in staging environment, and will move the domain soon.",
+    //   link: [
+    //     {
+    //       url: "https://admin.localdiskzha.com",
+    //       note: "Investor Side"
+    //     },
+    //     {
+    //       url: "https://pengelola.localdiskzha.com",
+    //       note: "Pengelola / Admin Side"
+    //     }
+    //   ],
+    // }
   },
   {
     id: "monda",
@@ -86,16 +86,16 @@ export const softwareProjectsDetail = [
         link: "https://midtrans.com/"
       }
     ],
-    flagEnvironment: {
-      environment: "staging",
-      notes: "Project is in staging environment, sometimes the API is not working and will be troubleshooted later. Since it in staging mode, all of the payment is need to use virtual payment by Midtrans.",
-      link: [
-        {
-          url: "https://mondakitchen.com",
-          note: "Visit Here."
-        }
-      ]
-    }
+    // flagEnvironment: {
+    //   environment: "staging",
+    //   notes: "Project is in staging environment, sometimes the API is not working and will be troubleshooted later. Since it in staging mode, all of the payment is need to use virtual payment by Midtrans.",
+    //   link: [
+    //     {
+    //       url: "https://mondakitchen.com",
+    //       note: "Visit Here."
+    //     }
+    //   ]
+    // }
   },
   {
     id: "fokus",
@@ -148,15 +148,15 @@ export const softwareProjectsDetail = [
       formatFile: "png",
       totalImage: 6
     },
-    flagEnvironment: {
-      environment: "production",
-      link: [
-        {
-          url: "https://sultantangsel.id",
-          note: "Visit Here."
-        }
-      ]
-    }
+    // flagEnvironment: {
+    //   environment: "production",
+    //   link: [
+    //     {
+    //       url: "https://sultantangsel.id",
+    //       note: "Visit Here."
+    //     }
+    //   ]
+    // }
   },
 ]
 

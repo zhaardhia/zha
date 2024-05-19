@@ -11,7 +11,13 @@ const AboutMeMain = () => {
         <span className="section-title text-3xl mt-9 sm:w-[15%] w-[45%]">About Me</span>
       </div>
       <div className="flex flex-col gap-5">
-        <p className="text-md">I am currently working at <a href="https://mayar.id" target='_blank' className="font-semibold underline">Mayar</a> as a Software Engineer, actively building & maintaining commerce and digital payment solution's web application, feature & services for growing business. </p>
+        <p className="text-md">I am currently working at <a href="https://mayar.id" target='_blank' className="font-semibold underline" style={{
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+          backgroundImage: "linear-gradient(90deg, #0C54EC, #EB1C7C)",
+          textDecoration: "underline"
+        }}>Mayar</a> as a Software Engineer, actively building & maintaining commerce and digital payment solution's web application, feature & services for growing business. </p>
         
         <p className="text-md">Outside of work, I'm interested in photography, doing lots of street photography and portraits. I'm also working as an unofficial musician, a full time bedroom musician creating some beats and writing songs.</p>
       </div>

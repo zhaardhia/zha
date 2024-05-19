@@ -125,7 +125,7 @@ const SoftwareDetail = () => {
 
       <SwiperDemoSoftware src={imageSource}/>
       <div className="text-sm font-extralight text-slate-600 flex flex-col gap-3">
-        {findDetailProj?.flagEnvironment?.environment !== "production" && (
+        {findDetailProj?.flagEnvironment && findDetailProj?.flagEnvironment?.environment !== "production" && (
           <p>This is <strong>{findDetailProj?.flagEnvironment?.environment}</strong> environment. {findDetailProj?.flagEnvironment?.notes && findDetailProj?.flagEnvironment?.notes}</p>
         )}
 
