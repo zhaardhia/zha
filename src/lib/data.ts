@@ -173,7 +173,7 @@ export interface SoftwareProjectDetailType {
   techStack: string[];
   showCase: SoftwareProjectDetailShowCaseType,
   references?: ReferencesProjectsType[] | undefined,
-  flagEnvironment: FlagEnvironmentType
+  flagEnvironment?: FlagEnvironmentType
 }
 
 export interface ReferencesProjectsType {
