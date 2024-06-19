@@ -35,6 +35,14 @@ interface TechType {
 }
 
 const projectsApp: Record<string, Project> = {
+  "mardiyuana school monitoring student": {
+    id: "mardiyuana",
+    desc:
+      "Lorem ipsum.",
+    techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
   "last man standing": {
     id: "lsm",
     desc:

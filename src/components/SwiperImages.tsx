@@ -27,6 +27,9 @@ export default () => {
 
     >
       <SwiperSlide className="mx-auto">
+        <Image src="/main-software-project/mardiyuanaBanner.png" alt={'mardiyuana school'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
+      </SwiperSlide>
+      <SwiperSlide className="mx-auto">
         <Image src="/main-software-project/mertapadaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide>

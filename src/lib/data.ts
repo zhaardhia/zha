@@ -1,5 +1,35 @@
 export const softwareProjectsDetail = [
   {
+    id: "mardiyuana",
+    name: "mardiyuana school monitoring student",
+    description: [
+      "This project’s aim is to built a monitoring student platform for parents, learning & event management for school admin & teachers, to control and manage all the students in Mardiyuana Middle School. the feature is within these:",
+      "",
+      "- Post an incoming activity for student and let the parents vote if they are agree with the activity",
+      "- Curriculum & Registered student management for admin school",
+      "- Assignment and Discussion management for teacher to student & parent (the parent will get notified through email)",
+      "- Score recap",
+      "- Discussion teacher with parent",
+      "- etc",
+    ],
+    banner: "/mardiyuana/mardiyuanaBanner2.png",
+    techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
+    showCase: {
+      formatName: "mardiyuanaShow",
+      formatFile: "png",
+      totalImage: 6
+    },
+    // flagEnvironment: {
+    //   environment: "production",
+    //   link: [
+    //     {
+    //       url: "https://agor.lastman.xyz/",
+    //       note: "Visit Here."
+    //     }
+    //   ]
+    // }
+  },
+  {
     id: "lsm",
     name: "last man standing",
     description: [

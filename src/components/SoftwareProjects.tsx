@@ -36,6 +36,14 @@ interface TechType {
 }
 
 const projects: Record<string, Project> = {
+  "mardiyuana school monitoring student": {
+    id: "mardiyuana",
+    desc:
+      "Lorem ipsum.",
+    techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
   "last man standing": {
     id: "lsm",
     desc:
@@ -69,14 +77,14 @@ const projects: Record<string, Project> = {
     link: "https://github.com/utopeeuh/Fokus",
     open: "https://apps.apple.com/id/app/fokus/id1663702869"
   },
-  "threap app": {
-    id: "threap",
-    desc:
-      "An online thread apps that could create thread, like/unlike, and comment on every thread.",
-    techStack: ["react", "tailwind", "redux"],
-    link: "https://github.com/zhaardhia/threap-app",
-    open: ""
-  },
+  // "threap app": {
+  //   id: "threap",
+  //   desc:
+  //     "An online thread apps that could create thread, like/unlike, and comment on every thread.",
+  //   techStack: ["react", "tailwind", "redux"],
+  //   link: "https://github.com/zhaardhia/threap-app",
+  //   open: ""
+  // },
   "sultan tangsel BPN": {
     id: "sultantangsel",
     desc:
