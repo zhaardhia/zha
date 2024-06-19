@@ -86,7 +86,7 @@ export const softwareFields = [
   },
   {
     id: "next",
-    name: "Next JS",
+    name: "Next",
     icon: techStack["next"],
     color: "text-white"
   },

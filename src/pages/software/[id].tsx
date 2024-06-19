@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button'
 import FadeBox from '@/components/FadeBox'
 const lsmTech = [
   {
-    name: "Next JS",
+    name: "Next",
     icon: techStack["next"],
     color: "text-black"
   },
@@ -82,7 +82,7 @@ const SoftwareDetail = () => {
       return {
         name: findStack!.name,
         icon: techStack[stack as keyof TechType],
-        color: findStack!.color
+        color: findStack?.id === "next" ? "text-black" : findStack!.color
       }
     })
   }
