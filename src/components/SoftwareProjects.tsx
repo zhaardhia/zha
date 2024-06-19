@@ -102,7 +102,7 @@ const SoftwareProjects = () => {
       <ul className="projects-grid">
         {Object.keys(projects).map((key, i) => (
           <FadeBox delay={`${i + 1}00ms`}>
-            <div className="projects-card cursor-pointer">
+            <div className="projects-card cursor-pointer relative">
               <div className="card-header">
                 <div className="text-[#7f5af0] hover:text-[#9375eb]">
                   <Link href={`/software/${projects[key]["id"]}`} className="">
@@ -125,6 +125,9 @@ const SoftwareProjects = () => {
                   )
                 })}
               </div>
+              <Link href={`/software/${projects[key]["id"]}`} className="">
+                <p className='text-slate-100 underline absolute bottom-3 right-5 mb- text-sm'>See Details</p>
+              </Link>
             </div>
           </FadeBox>
         ))}
