@@ -39,7 +39,7 @@ const projects: Record<string, Project> = {
   "mardiyuana school monitoring student": {
     id: "mardiyuana",
     desc:
-      "Lorem ipsum.",
+      "A monitoring student platform for teacher & admin school CMS.",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
     // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
     // open: "https://tdsb-app.herokuapp.com/"
