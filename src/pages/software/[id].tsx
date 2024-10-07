@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Layout from '@/components/Layout'
 import FieldBadges from '@/components/FieldBadges'
 import SocialMedias from '@/components/SocialMedias'
@@ -88,63 +89,72 @@ const SoftwareDetail = () => {
   }
   console.log({techStacks})
   return (
-    <Layout>
-      <div className="">
-        <div className="h-28">
+    <>
+      <Head>
+        <title>localdiskzha | {findDetailProj?.name}🧑🏻‍💻</title>
+        <meta name="description" content={`${findDetailProj?.name} projects`} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content={`localdiskzha | ${findDetailProj?.name}🧑🏻‍💻`} />
+        <meta property="og:description" content={`${findDetailProj?.name} projects`} />
+      </Head>
+      <Layout>
+        <div className="">
+          <div className="h-28">
+          </div>
+          <FadeBox>
+            <div className="sm:mt-0 mt-5 sm:gap-0 gap-2 flex sm:justify-between justify-around items-center sm:flex-row flex-col min-h-[70vh]">
+              <p className="text-5xl">{findDetailProj?.name}</p>
+              {findDetailProj?.banner && (
+                <Image src={findDetailProj?.banner} alt='project banner' width={400} height={200} priority />
+              )}
+            </div>
+          </FadeBox>  
+
+          {techStacks && (<FieldBadges fields={techStacks} />)}
         </div>
         <FadeBox>
-          <div className="sm:mt-0 mt-5 sm:gap-0 gap-2 flex sm:justify-between justify-around items-center sm:flex-row flex-col min-h-[70vh]">
-            <p className="text-5xl">{findDetailProj?.name}</p>
-            {findDetailProj?.banner && (
-              <Image src={findDetailProj?.banner} alt='project banner' width={400} height={200} loading='lazy' />
-            )}
+          <div className="mt-28 mb-10">
+            <div className="mb-10">
+              <span className="section-title text-3xl mt-9 w-[10%]">Highlights</span>
+            </div>
+            <div className="flex flex-col gap-4 text-lg">
+              {findDetailProj?.description?.map((description: string) => {
+                return <p>{description}</p>
+              })}
+            </div>
           </div>
-        </FadeBox>  
-
-        {techStacks && (<FieldBadges fields={techStacks} />)}
-      </div>
-      <FadeBox>
-        <div className="mt-28 mb-10">
-          <div className="mb-10">
-            <span className="section-title text-3xl mt-9 w-[10%]">Highlights</span>
-          </div>
-          <div className="flex flex-col gap-4 text-lg">
-            {findDetailProj?.description?.map((description: string) => {
-              return <p>{description}</p>
-            })}
-          </div>
-        </div>
-      </FadeBox>
-      {findDetailProj?.references && (
-        <div className="flex gap-2 italic text-slate-600">
-          References: {findDetailProj?.references?.map((reference: { name: string, link: string }, idx: number) => {
-            return <a target='_blank' href={reference.link} className="references">{reference.name}{findDetailProj?.references?.length === idx + 1 ? "" : ","}</a>
-          })}
-        </div>
-      )}
-
-      <SwiperDemoSoftware src={imageSource}/>
-      <div className="text-sm font-extralight text-slate-600 flex flex-col gap-3">
-        {/* {findDetailProj?.flagEnvironment && findDetailProj?.flagEnvironment?.environment !== "production" && (
-          <p>This is <strong>{findDetailProj?.flagEnvironment?.environment}</strong> environment. {findDetailProj?.flagEnvironment?.notes && findDetailProj?.flagEnvironment?.notes}</p>
-        )} */}
-
-        {findDetailProj?.flagEnvironment?.link && (
-          <div className="flex gap-3">
-            {findDetailProj?.flagEnvironment?.link?.map((linky: { url?: string, note?: string}) => {
-              console.log({linky})
-              return (
-                <Button variant="outline"><a target='_blank' href={linky?.url}>{linky?.note}</a></Button>
-              )
+        </FadeBox>
+        {findDetailProj?.references && (
+          <div className="flex gap-2 italic text-slate-600">
+            References: {findDetailProj?.references?.map((reference: { name: string, link: string }, idx: number) => {
+              return <a target='_blank' href={reference.link} className="references">{reference.name}{findDetailProj?.references?.length === idx + 1 ? "" : ","}</a>
             })}
           </div>
         )}
-      </div>
-      <div className="my-10 flex flex-col gap-5">
-        <hr  />
-        <SocialMedias />
-      </div>
-    </Layout>
+
+        <SwiperDemoSoftware src={imageSource}/>
+        <div className="text-sm font-extralight text-slate-600 flex flex-col gap-3">
+          {/* {findDetailProj?.flagEnvironment && findDetailProj?.flagEnvironment?.environment !== "production" && (
+            <p>This is <strong>{findDetailProj?.flagEnvironment?.environment}</strong> environment. {findDetailProj?.flagEnvironment?.notes && findDetailProj?.flagEnvironment?.notes}</p>
+          )} */}
+
+          {findDetailProj?.flagEnvironment?.link && (
+            <div className="flex gap-3">
+              {findDetailProj?.flagEnvironment?.link?.map((linky: { url?: string, note?: string}) => {
+                console.log({linky})
+                return (
+                  <Button variant="outline"><a target='_blank' href={linky?.url}>{linky?.note}</a></Button>
+                )
+              })}
+            </div>
+          )}
+        </div>
+        <div className="my-10 flex flex-col gap-5">
+          <hr  />
+          <SocialMedias />
+        </div>
+      </Layout>
+    </>
   )
 }
 

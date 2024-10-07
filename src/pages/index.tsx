@@ -1,3 +1,5 @@
+import React from 'react';
+import Head from 'next/head';
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Layout from '@/components/Layout'
@@ -13,22 +15,29 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <Layout
-      // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <Intro
-        headerTitle="hi, it’s firzha."
-        childTitle="crafting digital solutions & making art."
-      />
-      <FieldBadges fields={mainPersonalFields} />
-      <FadeBox>
-        <Stuff />
-        <AboutMeMain />
-        <div className="my-10 flex flex-col gap-5">
-          <hr  />
-          <SocialMedias />
-        </div>
-      </FadeBox>
-    </Layout>
+    <>
+      <Head>
+        <title>localdiskzha | firzha ardhia ramadhan🧑🏻‍💻</title>
+        <meta name="description" content="localdiskzha is firzha's document of work." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="localdiskzha | firzha ardhia ramadhan🧑🏻‍💻" />
+        <meta property="og:description" content="localdiskzha is firzha's document of work." />
+      </Head>
+      <Layout>
+        <Intro
+          headerTitle="hi, it’s firzha."
+          childTitle="crafting digital solutions & making art."
+        />
+        <FieldBadges fields={mainPersonalFields} />
+        <FadeBox>
+          <Stuff />
+          <AboutMeMain />
+          <div className="my-10 flex flex-col gap-5">
+            <hr  />
+            <SocialMedias />
+          </div>
+        </FadeBox>
+      </Layout>
+    </>
   )
 }

@@ -37,7 +37,7 @@ const SwiperDemoSoftware: React.FC<SwiperDemoType> = ({ src }) => {
         return (
           <Link href={source.detail} className="cursor-pointer">
           <SwiperSlide className="mx-auto">
-            <Image src={source.src} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" loading='lazy' />
+            <Image src={source.src} alt={'swiper demo'} width={400} height={200} className="mx-auto py-10 rounded-lg -px-10" priority />
           </SwiperSlide>
           </Link>
         )
