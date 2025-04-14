@@ -116,12 +116,12 @@ const SoftwareApp = () => {
       <ul className="projects-grid">
         {Object.keys(projectsApp).map((key, i) => (
           <FadeBox delay={`${i + 1}00ms`}>
-            <li className="projects-card cursor-pointer">
+            <Link href={`/software/${projectsApp[key]["id"]}`} className="projects-card !cursor-pointer">
               <div className="card-header">
                 <div className="text-[#7f5af0] hover:text-[#9375eb]">
-                  <Link href={`/software/${projectsApp[key]["id"]}`} className="">
+                  {/* <Link href={`/software/${projectsApp[key]["id"]}`} className=""> */}
                     <Icon icon="ic:outline-folder" className="text-2xl" />
-                  </Link>
+                  {/* </Link> */}
                 </div>
                 <ExternalLinks
                   githubLink={projectsApp[key]["link"]}
@@ -139,7 +139,7 @@ const SoftwareApp = () => {
                   )
                 })}
               </div>
-            </li>
+            </Link>
           </FadeBox>
         ))}
       </ul>
