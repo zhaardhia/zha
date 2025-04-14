@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
-
+ 
 const Projects = () => {
   return (
     <div>
