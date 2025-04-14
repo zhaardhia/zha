@@ -10,6 +10,7 @@ import FadeBox from '@/components/FadeBox'
 import FieldBadges from '@/components/FieldBadges'
 import SocialMedias from '@/components/SocialMedias'
 import { mainPersonalFields } from '@/lib/utils'
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 

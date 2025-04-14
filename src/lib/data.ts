@@ -1,5 +1,23 @@
 export const softwareProjectsDetail = [
   {
+    id: "bpnkabtang",
+    name: "bpn kabupaten tangerang web apps",
+    description: [
+      "This project’s aim is to help residents in Tangerang district who want to proceed an appointment for their land certificates, as well as showing all the facility in BPN office",
+      "Feature:",
+      "- Landing page, dynamic social media & online consultation information, open public feedback",
+      "- CMS for public content & adjust citizen's form registration",
+      "- Online queue system & registration, tracking form progress, track history form data, PWAs, push notification, email notification (on progress phase 2)"
+    ],
+    banner: "/bpnkabtang/bpnkabtangShow4.png",
+    techStack: ["next", "nuxt", "tailwind", "typescript", "node", "jwt", "postgres", "docker", "redis"],
+    showCase: {
+      formatName: "bpnkabtangShow",
+      formatFile: "png",
+      totalImage: 8
+    }
+  },
+  {
     id: "mardiyuana",
     name: "mardiyuana school monitoring student",
     description: [
@@ -28,6 +46,36 @@ export const softwareProjectsDetail = [
     //     }
     //   ]
     // }
+  },
+  {
+    id: "kamimuralin",
+    name: "kami muralin dynamic landing page",
+    description: [
+      "Kami Muralin is a business that runs in mural drawing professional services for any types of media. This website aim to showcase all of their works, testimony, direct email form & business information. This website is also have a CMS so they could change the content in any time.",
+      "To built this site, I'm using Static Site Generation to boost the performance and revalidate it when user change the data. Also I'm using rate limitter into Redis & sanitize every input tag to keep the website safe."
+    ],
+    banner: "/kamimuralin/kamimuralinShow4.png",
+    techStack: ["next", "nuxt", "tailwind", "typescript", "node", "supabase", "redis"],
+    showCase: {
+      formatName: "kamimuralinShow",
+      formatFile: "png",
+      totalImage: 7
+    }
+  },
+  {
+    id: "kaizenbilliard",
+    name: "kaizen billiard dynamic landing page",
+    description: [
+      "Kaizen Billiard is a business that runs billiard equipment vendor. This website aim to showcase all of their products, event, showcase places & business information. This website is also have a CMS so they could change the content in any time.",
+      "To built this site, I'm using Static Site Generation to boost the performance and revalidate it when user change the data."
+    ],
+    banner: "/kaizenbilliard/kaizenbilliardShow3.png",
+    techStack: ["next", "nuxt", "tailwind", "typescript", "node", "supabase", "redis"],
+    showCase: {
+      formatName: "kaizenbilliardShow",
+      formatFile: "png",
+      totalImage: 5
+    }
   },
   {
     id: "lsm",
@@ -165,29 +213,29 @@ export const softwareProjectsDetail = [
       ]
     }
   },
-  {
-    id: "sultantangsel",
-    name: "Sultan Tangsel",
-    description: [
-      "Sultan Tangsel is a registration service by BPN Tangerang Selatan so the South Tangerang's residents can queue for their land management. I continued BPN last website's design and adding a registration service, along with admin site to manage and control the registrant",
-    ],
-    banner: "/sultantangsel/bannerSultangsel.png",
-    techStack: ["react", "tailwind", "node", "jwt", "mysql"],
-    showCase: {
-      formatName: "sultangsel",
-      formatFile: "png",
-      totalImage: 6
-    },
-    // flagEnvironment: {
-    //   environment: "production",
-    //   link: [
-    //     {
-    //       url: "https://sultantangsel.id",
-    //       note: "Visit Here."
-    //     }
-    //   ]
-    // }
-  },
+  // {
+  //   id: "sultantangsel",
+  //   name: "Sultan Tangsel",
+  //   description: [
+  //     "Sultan Tangsel is a registration service by BPN Tangerang Selatan so the South Tangerang's residents can queue for their land management. I continued BPN last website's design and adding a registration service, along with admin site to manage and control the registrant",
+  //   ],
+  //   banner: "/sultantangsel/bannerSultangsel.png",
+  //   techStack: ["react", "tailwind", "node", "jwt", "mysql"],
+  //   showCase: {
+  //     formatName: "sultangsel",
+  //     formatFile: "png",
+  //     totalImage: 6
+  //   },
+  //   // flagEnvironment: {
+  //   //   environment: "production",
+  //   //   link: [
+  //   //     {
+  //   //       url: "https://sultantangsel.id",
+  //   //       note: "Visit Here."
+  //   //     }
+  //   //   ]
+  //   // }
+  // },
 ]
 
 export type SoftwareProjectDetailShowCaseType = {

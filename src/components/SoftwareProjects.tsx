@@ -1,11 +1,16 @@
 import React from 'react'
 import FadeBox from './FadeBox'
 import { Icon } from '@iconify/react';
+// const Icon = dynamic(() => import('@iconify/react').then((mod) => mod.Icon), {
+//   ssr: false,
+// });
+
 import ExternalLinks from './ExternalLink';
 import { techStack } from '@/lib/utils';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import SwiperImages from './SwiperImages';
+// import dynamic from 'next/dynamic';
 interface Project {
   id: string;
   desc: string;
@@ -36,6 +41,14 @@ interface TechType {
 }
 
 const projects: Record<string, Project> = {
+  "bpn kabupaten tangerang web apps": {
+    id: "bpnkabtang",
+    desc:
+      "A national land government website that includes dynamic online consultation, feedbacks, queue registration system, etc.",
+    techStack: ["next", "nuxt", "typescript", "docker", "redis", "postgres"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
   "mardiyuana school monitoring student": {
     id: "mardiyuana",
     desc:
@@ -85,29 +98,27 @@ const projects: Record<string, Project> = {
   //   link: "https://github.com/zhaardhia/threap-app",
   //   open: ""
   // },
-  "sultan tangsel BPN": {
-    id: "sultantangsel",
-    desc:
-      "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
-    techStack: ["react", "tailwind", "node", "jwt", "mysql"],
-    // link: "https://github.com/gazijarin/OdinBot",
-    open: "https://sultantangsel.id/"
-  },
+  // "sultan tangsel BPN": {
+  //   id: "sultantangsel",
+  //   desc:
+  //     "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
+  //   techStack: ["react", "tailwind", "node", "jwt", "mysql"],
+  //   // link: "https://github.com/gazijarin/OdinBot",
+  //   open: "https://sultantangsel.id/"
+  // },
 };
 
 const SoftwareProjects = () => {
   return (
     <div className="project-container my-10">
       <SwiperImages />
-      <ul className="projects-grid">
+      {/* <ul className="projects-grid">
         {Object.keys(projects).map((key, i) => (
           <FadeBox delay={`${i + 1}00ms`}>
-            <div className="projects-card cursor-pointer relative">
+            <Link href={`/software/${projects[key]["id"]}`} className="projects-card cursor-pointer relative">
               <div className="card-header">
                 <div className="text-[#7f5af0] hover:text-[#9375eb]">
-                  <Link href={`/software/${projects[key]["id"]}`} className="">
-                    <Icon icon="ic:outline-folder" className="text-2xl" />
-                  </Link>
+                  <Icon icon="ic:outline-folder" className="text-2xl" width={24} height={24} />
                 </div>
                 <ExternalLinks
                   githubLink={projects[key]["link"]}
@@ -128,10 +139,10 @@ const SoftwareProjects = () => {
               <Link href={`/software/${projects[key]["id"]}`} className="">
                 <p className='text-slate-100 underline absolute bottom-3 right-5 mb- text-sm'>See Details</p>
               </Link>
-            </div>
+            </Link>
           </FadeBox>
         ))}
-      </ul>
+      </ul> */}
       <Link href="/software">
         <Button variant="outline" className="mt-10 rounded-xl hover:bg-slate-50">View All Software Projects <Icon icon="grommet-icons:next" className="ml-1" /></Button>
       </Link>

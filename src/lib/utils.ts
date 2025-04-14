@@ -7,6 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const techStack = {
   next: "nonicons:next-16",
+  nuxt: "material-icon-theme:nuxt",
   tailwind: "vscode-icons:file-type-tailwind",
   react: "logos:react",
   node: "vscode-icons:file-type-node",
@@ -24,7 +25,11 @@ export const techStack = {
   graphql: "vscode-icons:file-type-graphql",
   gatsby: "logos:gatsby",
   chakra: "simple-icons:chakraui",
-  sass: "logos:sass"
+  sass: "logos:sass",
+  docker: "logos:docker-icon",
+  nginx: "material-icon-theme:nginx",
+  redis: "devicon:redis",
+  supabase: "devicon:supabase"
 }
 
 export const mainPersonalFields = [
@@ -38,31 +43,31 @@ export const mainPersonalFields = [
     icon: "icon-park-solid:web-page",
     color: "text-blue-600"
   },
-  {
-    name: "Freelancer",
-    icon: "simple-icons:freelancer",
-    color: "text-green-500"
-  },
-  {
-    name: "Analog Photography",
-    icon: "mdi:film",
-    color: "text-slate-500"
-  },
-  {
-    name: "Street & Portrait Photography",
-    icon: "mdi:photography",
-    color: "text-red-500"
-  },
-  {
-    name: "Music",
-    icon: "mdi:music",
-    color: "text-amber-700"
-  },
-  {
-    name: "Audio Engineer",
-    icon: "game-icons:lightning-frequency",
-    color: "text-orange-500"
-  },
+  // {
+  //   name: "Freelancer",
+  //   icon: "simple-icons:freelancer",
+  //   color: "text-green-500"
+  // },
+  // {
+  //   name: "Analog Photography",
+  //   icon: "mdi:film",
+  //   color: "text-slate-500"
+  // },
+  // {
+  //   name: "Street & Portrait Photography",
+  //   icon: "mdi:photography",
+  //   color: "text-red-500"
+  // },
+  // {
+  //   name: "Music",
+  //   icon: "mdi:music",
+  //   color: "text-amber-700"
+  // },
+  // {
+  //   name: "Audio Engineer",
+  //   icon: "game-icons:lightning-frequency",
+  //   color: "text-orange-500"
+  // },
 ]
 
 export const softwareFields = [
@@ -172,6 +177,36 @@ export const softwareFields = [
     id: "sass",
     name: "Sass",
     icon: techStack["sass"],
+    color: "text-black"
+  },
+  {
+    id: "nuxt",
+    name: "Nuxt",
+    icon: techStack["nuxt"],
+    color: "text-black"
+  },
+  {
+    id: "docker",
+    name: "Docker",
+    icon: techStack["docker"],
+    color: "text-black"
+  },
+  {
+    id: "redis",
+    name: "Redis",
+    icon: techStack["redis"],
+    color: "text-black"
+  },
+  {
+    id: "nginx",
+    name: "Nginx",
+    icon: techStack["nginx"],
+    color: "text-black"
+  },
+  {
+    id: "supabase",
+    name: "Supabase",
+    icon: techStack["supabase"],
     color: "text-black"
   },
 ]

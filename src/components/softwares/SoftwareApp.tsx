@@ -35,11 +35,27 @@ interface TechType {
 }
 
 const projectsApp: Record<string, Project> = {
+  "bpn kabupaten tangerang web apps": {
+    id: "bpnkabtang",
+    desc:
+      "A national land government website that includes dynamic online consultation, feedbacks, queue registration system, etc.",
+    techStack: ["next", "nuxt", "typescript", "docker", "redis", "postgres"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
   "mardiyuana school monitoring student": {
     id: "mardiyuana",
     desc:
       "Lorem ipsum.",
     techStack: ["next", "tailwind", "typescript", "node", "jwt", "mysql"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
+  "kami muralin dynamic landing page": {
+    id: "kamimuralin",
+    desc:
+      "A dynamic landing page for mural business with CMS & direct email form.",
+    techStack: ["next", "nuxt", "typescript", "redis", "supabase"],
     // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
     // open: "https://tdsb-app.herokuapp.com/"
   },
@@ -59,6 +75,14 @@ const projectsApp: Record<string, Project> = {
     link: "https://github.com/zhaardhia/mertapada-admin-frontend",
     open: "https://pengelola.localdiskzha.com"
   },
+  "kaizen billiard dynamic landing page": {
+    id: "kaizenbilliard",
+    desc:
+      "A dynamic landing page for billiard equipment business with CMS.",
+    techStack: ["next", "nuxt", "typescript", "redis", "supabase"],
+    // link: "https://github.com/gazijarin/TDSBHomeworkManagement",
+    // open: "https://tdsb-app.herokuapp.com/"
+  },
   "monda commerce": {
     id: "monda",
     desc:
@@ -76,14 +100,14 @@ const projectsApp: Record<string, Project> = {
     link: "https://github.com/utopeeuh/Fokus",
     open: "https://apps.apple.com/id/app/fokus/id1663702869"
   },
-  "sultan tangsel BPN": {
-    id: "sultantangsel",
-    desc:
-      "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
-    techStack: ["react", "tailwind", "node", "jwt", "mysql"],
-    // link: "https://github.com/gazijarin/OdinBot",
-    open: "https://sultantangsel.id"
-  },
+  // "sultan tangsel BPN": {
+  //   id: "sultantangsel",
+  //   desc:
+  //     "A Company Profile Web with Registration Form, E-ticket, queuing, and other Admin Features.",
+  //   techStack: ["react", "tailwind", "node", "jwt", "mysql"],
+  //   // link: "https://github.com/gazijarin/OdinBot",
+  //   open: "https://sultantangsel.id"
+  // },
 };
 
 const SoftwareApp = () => {

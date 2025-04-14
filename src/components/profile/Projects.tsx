@@ -6,6 +6,13 @@ const Projects = () => {
   return (
     <div>
       <div className="flex flex-col gap-4 my-4">
+        <Link href="/software/bpnkabtang" className="flex justify-between">
+          <p>bpn kabupaten tangerang</p>
+          <Icon icon="ion:open-outline" className="text-black text-2xl" />
+        </Link>
+        <hr />
+      </div>
+      <div className="flex flex-col gap-4 my-4">
         <Link href="/software/lsm" className="flex justify-between">
           <p>last man standing</p>
           <Icon icon="ion:open-outline" className="text-black text-2xl" />

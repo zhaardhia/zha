@@ -27,10 +27,19 @@ export default () => {
 
     >
       <SwiperSlide className="mx-auto">
+        <Image src="/main-software-project/bpnkabtangBanner.png" alt={'bpn kabupaten tangerang'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
+      </SwiperSlide>
+      <SwiperSlide className="mx-auto">
         <Image src="/main-software-project/mardiyuanaBanner.png" alt={'mardiyuana school'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide className="mx-auto">
+        <Image src="/main-software-project/kamimuralinBanner.png" alt={'kami muralin'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
+      </SwiperSlide>
+      <SwiperSlide className="mx-auto">
         <Image src="/main-software-project/mertapadaBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
+      </SwiperSlide>
+      <SwiperSlide className="mx-auto">
+        <Image src="/main-software-project/kaizenbilliardBanner.png" alt={'kaizen billiard'} width={500} height={500} className="mx-auto py-10 rounded-lg" loading='lazy' />
       </SwiperSlide>
       <SwiperSlide>
         <Image src="/main-software-project/lsmBanner.png" alt={'mertapada wkb'} width={500} height={500} className="mx-auto py-10 rounded-3xl" loading='lazy' />

@@ -38,7 +38,7 @@ const index = () => {
             <p className="text-[#16161a]">I'm Firzha, a Software Engineer / Frontend & Backend Engineer / Digital Crafter, passionate building digital tech product, intuitive, attractive and visually stunning software for business solution. Currently working with Javascript / TypeScript ecosystems.</p>
             <p className="text-[#16161a]">Throughout my professional journey, I've cultivated a proficiency in crafting technological solutions that not only enhance user satisfaction but also play a substantial role in accomplishing key business goals.</p>
             <div className="flex flex-col gap-2">
-              <p className="text-[#16161a]">I'm open to any freelance role, related to Software Engineering🙌</p>
+              {/* <p className="text-[#16161a]">I'm open to any freelance role, related to Software Engineering🙌</p> */}
               <Button variant="outline" className="w-[11rem]">
                 <a href="/CV.pdf" download="CVFirzha.pdf">
                   Here's my latest CV!
